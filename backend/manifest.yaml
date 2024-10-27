@@ -63,7 +63,7 @@ spec:
         #   initialDelaySeconds: 30
         envFrom: #calling config map code here to connect to DB_HOST 
         - configMapRef:
-          name: backend
+            name: backend
 
 
 ---
