@@ -1,8 +1,8 @@
-kind: Deployment
+kind: Deployment #using deployment set
 apiVersion: apps/v1
 metadata:
   name: mysql
-  namespace: expense
+  namespace: expense #will be running in expense namespace
   # these labels are deployment related labels
   labels:
     component: mysql
