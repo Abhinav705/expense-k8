@@ -120,13 +120,13 @@ spec:
       containers:
       - name: frontend
         image: abhinav1810/frontend:v1.0
-        # resources:
-        #   requests:
-        #     cpu: "100m"
-        #     memory: "128Mi"
-        #   limits:
-        #     cpu: "150m"
-        #     memory: "256Mi"
+        resources:
+          requests:
+            cpu: "100m"
+            memory: "128Mi"
+          limits:
+            cpu: "150m"
+            memory: "256Mi"
         #main purpose of volume mount here is because we need to change the nginx.conf file port number from 80 to 8080
         #if you want to change the port number you have to change it inside the code. so it will be considered as code change and we have to follow all the deployment process
         #since changing the port number is a config change, we are directly copying the nginx.conf code here in the ConfigMap data section

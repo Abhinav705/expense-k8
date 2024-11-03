@@ -9,7 +9,7 @@ metadata:
     project: expense
     tier: db
 spec:
-  replicas: 2
+  replicas: 2 #create 2 containers
   selector:
     matchLabels:
       component: mysql
